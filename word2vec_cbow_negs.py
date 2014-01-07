@@ -120,7 +120,7 @@ except:
                     label = 1
 
                 else:
-                    random_integer = random.randint(model.table_size-1) #exclude the upper bound
+                    random_integer = random.randint(model.table_size)
                     target_index = model.table[random_integer]
                     if target_index == word.index:
                         continue

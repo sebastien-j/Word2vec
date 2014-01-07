@@ -176,7 +176,7 @@ def train_sentence(model, sentence, alpha, _work):
 
     cdef int a
     for a in range(sentence_len*2*window*neg_samples):
-        random_numbers[a] = np.random.randint(table_size-1)
+        random_numbers[a] = np.random.randint(table_size)
 
     for i in range(sentence_len):
         word = sentence[i]
